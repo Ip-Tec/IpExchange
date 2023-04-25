@@ -61,8 +61,8 @@ div.video h1 {
 }
 
 video,iframe {
-  width: 82.5%;
-  height: auto;
+  width: 720px;
+  height: 405px;
   margin: 1em calc(15% / 2);
 }
 
