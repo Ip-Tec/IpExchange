@@ -1,0 +1,126 @@
+:root {
+  --bg: #222020;
+  --color: snow;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*,
+body {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: gray;
+  transform: all 3s;
+  font-size: large;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-size: larger;
+}
+
+main.jumbotron-main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 1.3rem;
+  justify-content: space-between;
+}
+
+main.jumbotron-main div.text {
+  width: 65%;
+  text-align: center;
+}
+
+main.jumbotron-main img {
+  width: calc(100% - 65%);
+}
+div.video {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+}
+
+div.video h1 {
+  margin: 0.71em;
+  text-align: center;
+  font-size: xx-large;
+}
+
+video,
+iframe {
+  width: 82.5%;
+  height: 420px;
+  margin: 1em calc(15% / 2);
+}
+
+div.links {
+  z-index: 3;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  margin-top: 5rem;
+  padding-top: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+div.links::before {
+  top: 25%;
+  left: 0;
+  right: 0;
+  width: 38%;
+  z-index: -1;
+  content: "";
+  height: 75%;
+  opacity: 0.6;
+  margin: auto;
+  padding: 0.7rem;
+  filter: blur(2px);
+  position: absolute;
+  border-radius: 20px;
+  background: #222020;
+}
+
+div.links p:nth-child(1) {
+  padding: 0.5rem;
+  font-size: x-large;
+  text-decoration: underline;
+  font-family: "Roboto";
+}
+
+div.links p {
+  color: snow;
+  padding: 0.5em;
+  font-size: large;
+}
+div.links p a {
+  color: rgb(76, 225, 239);
+}
+
+div.parallx {
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("./image/23757220_221_ug9ses1dagfpbi0xlvdoaxrl-min.jpg");
+}
+
+footer {
+  margin: 0.5rem;
+  text-align: center;
+}
