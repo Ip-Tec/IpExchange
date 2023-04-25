@@ -60,7 +60,7 @@ div.video h1 {
   font-size: xx-large;
 }
 
-video {
+video,iframe {
   width: 82.5%;
   height: auto;
   margin: 1em calc(15% / 2);
