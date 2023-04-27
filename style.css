@@ -7,25 +7,43 @@
 body {
   margin: 0;
   padding: 0;
-  width: auto;
-  height: auto;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* overflow: hidden; */
   font-family: "Poppins";
   box-sizing: border-box;
 }
 nav {
+  top: 0;
   width: 100%;
-  margin: auto;
-  padding: 1rem;
+  height: 4rem;
   display: flex;
+  position: fixed;
+  /* overflow: hidden; */
   align-items: center;
-  justify-content: space-evenly;
+  padding: 0.4rem 1.3rem;
+  background-color: #333;
+  justify-content: space-between;
 }
 
+/* Navbar links */
 nav a {
-  color: gray;
-  transform: all 3s;
-  font-size: large;
+  /* float: left; */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+}
+
+nav a img {
+  top: 0;
+  left: 0.6em;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  background: snow;
+  border-radius: 100%;
 }
 
 nav a:hover {
@@ -35,9 +53,9 @@ nav a:hover {
 main.jumbotron-main {
   height: 100%;
   display: flex;
+  margin-top: 4.4rem;
   align-items: center;
-  padding: 0.4rem 1.3rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 main.jumbotron-main div.text {
@@ -49,9 +67,13 @@ main.jumbotron-main img {
   width: calc(100% - 65%);
 }
 div.video {
-  width: 95%;
+  width: 98%;
   margin: auto;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 div.video h1 {
@@ -62,9 +84,9 @@ div.video h1 {
 
 video,
 iframe {
-  width: 82.5%;
+  width: 93.5%;
   height: 420px;
-  margin: 1em calc(15% / 2);
+  margin: 1em auto;
 }
 
 div.links {
@@ -79,13 +101,13 @@ div.links {
 }
 
 div.links::before {
-  top: 25%;
+  top: 16%;
   left: 0;
   right: 0;
-  width: 38%;
   z-index: -1;
   content: "";
   height: 75%;
+  width: 20rem;
   opacity: 0.6;
   margin: auto;
   padding: 0.7rem;
@@ -118,7 +140,7 @@ div.parallx {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-image: url("./image/23757220_221_ug9ses1dagfpbi0xlvdoaxrl-min.jpg");
-}
+} 
 
 footer {
   margin: 0.5rem;
